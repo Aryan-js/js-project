@@ -1,7 +1,7 @@
 class Calendar {
   date;
   constructor() {
-    return new Date();
+    this.date = new Date();
   }
   now() {
     return new Date();

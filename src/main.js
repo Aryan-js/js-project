@@ -1,4 +1,3 @@
-//import "bootstrap/dist/css/bootstrap.min.css";
 import Calculator from "./class/calculator.js";
 import Calendar from "./class/calendar.js";
 
@@ -38,7 +37,8 @@ const exe6 = document.createElement("p");
 const exe7 = document.createElement("p");
 const exe8 = document.createElement("p");
 // Generate Calculator class object and calculate operation
-exe5.innerHTML = "The date of this moment?" + calendar.now;
+console.log(calendar);
+exe5.innerHTML = "The date of this moment?" + calendar.now();
 root.appendChild(exe5);
 exe6.innerHTML = "What date was it 25 days ago?" + calendar.daysGone(25);
 root.appendChild(exe6);
