@@ -1,9 +1,21 @@
 class Calculator {
   result;
-  sum(a, b) {}
-  multi(a, b) {}
-  division(a, b) {}
-  mod(a, b) {}
+  sum(a, b) {
+    return a + b;
+  }
+
+  multi(a, b) {
+    return a * b;
+  }
+
+  division(a, b) {
+    return a / b;
+  }
+
+  mod(a, b) {
+    return a % b;
+  }
+  
   clear() {}
 }
 
