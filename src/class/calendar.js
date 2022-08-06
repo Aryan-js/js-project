@@ -1,14 +1,13 @@
 class Calendar {
   date;
   constructor() {
-    return new Date().getDate();
+    return new Date();
   }
   now() {
-    return new Date().getDate();
+    return new Date();
   }
   setDate(date) {
-    this.date = new date;
-    return new Date().getUTCDate() - 25;
+    this.date = new Date(date);
   }
   year() {
     return new Date().getFullYear();
@@ -21,6 +20,11 @@ class Calendar {
   }
   time() {
     return new Date().getHours();
+  }
+  daysGone(day) {
+    let miliSecond = day * 24 * 60 * 60 * 1000;
+    let today = new Date().getTime();
+    return new Date(today - miliSecond);
   }
 }
 
